@@ -21,11 +21,14 @@
 }
 
 /* Hero Title */
+/* Hero Title */
 .hero-title {
   font-size: 3rem;
   margin-bottom: 20px;
   font-weight: 700;
   color: #fff;
+  background: none; /* Ensure no background color */
+  background-color: transparent; /* Ensure transparency */
   opacity: 0; /* Hide initially */
   transform: rotateX(0deg) translateZ(-50px); /* Start with 3D rotation */
   animation: fadeInUp 1.5s forwards, rotateIn 1.5s forwards; /* Apply animations */

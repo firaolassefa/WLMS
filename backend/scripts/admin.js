@@ -3,11 +3,11 @@ const userModel = require('../models/userModel');
 
 async function createAdminAccount() {
   try {
-    const selectedAdmin = await userModel.findOne({ email: "solomon@gmail.com" });
+    const selectedAdmin = await userModel.findOne({ email: "assefafiraol01@gmail.com" });
     if (!selectedAdmin) {
-      const hashedPassword = await bcrypt.hash("solomon", 10);
+      const hashedPassword = await bcrypt.hash("firaol", 10);
       const newAdmin = new userModel({
-        email: "solomon@gmail.com",
+        email: "assefafiraol01@gmail.com",
         name: "admin",
         password: hashedPassword,
         role: "admin"
